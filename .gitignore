@@ -1,0 +1,14 @@
+#
+# Documentation is here: http://git-scm.com/docs/gitignore
+#
+tmp/
+/nbproject/
+
+#
+# For vim temporary files
+#
+*.swp
+.~lock.*
+.*~
+*~
+
