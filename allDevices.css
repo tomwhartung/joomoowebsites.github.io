@@ -1,0 +1,141 @@
+/*
+ * allDevices.css: styles for use on all devices
+ * Use this with mediaQueries.css ...
+ */
+body {
+	color: #ffffff;
+	background-color: black;
+	background: url(background-dark.jpg);
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size:    1em;
+	text-align:   left;
+}
+div#content {
+	position: relative;
+}
+
+h1, h2, h3, th {
+	font-weight: bold;
+	text-align:  center;
+	text-decoration: underline;
+}
+h1, h2, h3, th, td {
+   margin: 0.2em;
+   padding: 0.2em;
+}
+
+h4, h5, h6 {
+	font-weight: bold;
+	text-align:  left;
+	text-decoration: underline;
+}
+p, ul, li, td, blockquote {
+	text-align: left;
+}
+/*
+ * Links
+ */
+a {
+	color: lightblue;
+   padding: 2px;
+	text-align: left;
+   text-decoration: none;
+}
+a:hover {
+	border: lightskyblue dashed 2px;
+	color: lightblue;
+   font-family: Times, serif;
+   padding: 2px;
+	text-decoration: underline;
+}
+a.disabled, a.disabled:hover {
+	cursor: default;
+	pointer-events: none;
+}
+dt {
+	font-weight: bold;
+}
+.standalone {
+
+}
+/*
+ * Symantic css classes
+ */
+.centered {
+	text-align: center;
+}
+.disabled, .obsolete {
+	text-decoration: line-through;
+}
+.emphasized {
+	font-style: italic;
+	text-decoration: underline;
+}
+.top {
+	float: right;
+}
+
+.air-quotes::before { content: '"'; }
+.air-quotes {
+	color: grey;
+	font-style: italic;
+}
+.air-quotes::after { content: '"'; }
+
+.superscript::before { content: "["; }
+.superscript {
+	font-variant-position: super;
+}
+.superscript::after { content: "]"; }
+ul.notes {
+	list-style-type: none;
+}
+
+div.output, .warning {
+	border-style: solid;
+	border-width: 0.5em;
+	margin: 0.5em;
+	padding: 1.0em;
+}
+.output {
+	border-color: grey;
+}
+.warning {
+	border-color: orange;
+}
+
+ul.no-bullets, ul.debugging  {
+	list-style-type: none;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+ul.debugging {
+	border: 3px solid red;
+}
+/*
+ * WARNING: CURRENTLY UNUSED...
+ */
+/*
+ * for my list of projects
+ */
+.site_list {
+	margin: 0 auto;
+	width: 70%;
+}
+
+/*
+ * old, consider deleting soon ....
+ */
+table, th, td {
+	border: yellow inset 5px ;
+}
+table.site_group {
+	margin-bottom: 12px;
+	padding: 6px;
+}
+th, td {
+	padding: 6px;
+	text-align: center;
+	white-space: nowrap;
+}
+
